@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'tajawal';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/tajawal-medium.ttf') format('truetype');
+}
+
+*{
+    font-family: 'tajawal', sans-serif;
+}
+.error{ border: 1px solid #ff0000; background: #facea8; color: #ff0000;}
+
+@media print {
+    body * {
+        visibility: hidden;
+        color: #000 !important;
+        margin: 0;
+    }
+    .print, .print * {
+        visibility: visible;
+    }
+    .print {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .no_print, .no_print *{
+        visibility: hidden;
+    }
+}
